@@ -1,0 +1,64 @@
+{
+  "name": "BattleshipGame",
+  "type": "object",
+  "properties": {
+    "gameId": {
+      "type": "string",
+      "description": "Unique identifier for the game"
+    },
+    "player1Id": {
+      "type": "string",
+      "description": "ID of player 1"
+    },
+    "player1Name": {
+      "type": "string",
+      "description": "Name of player 1"
+    },
+    "player1Board": {
+      "type": "array",
+      "description": "Player 1's board with ship positions and hits"
+    },
+    "player1Ships": {
+      "type": "array",
+      "description": "Player 1's ship placements"
+    },
+    "player2Id": {
+      "type": "string",
+      "description": "ID of player 2"
+    },
+    "player2Name": {
+      "type": "string",
+      "description": "Name of player 2"
+    },
+    "player2Board": {
+      "type": "array",
+      "description": "Player 2's board with ship positions and hits"
+    },
+    "player2Ships": {
+      "type": "array",
+      "description": "Player 2's ship placements"
+    },
+    "currentTurn": {
+      "type": "string",
+      "description": "ID of player whose turn it is"
+    },
+    "gameStatus": {
+      "type": "string",
+      "description": "Current game status: waiting, placing_ships, playing, finished"
+    },
+    "winner": {
+      "type": "string",
+      "description": "ID of winning player"
+    },
+    "moves": {
+      "type": "array",
+      "description": "Array of all moves made in the game"
+    }
+  },
+  "required": [
+    "gameId",
+    "player1Id",
+    "player1Name",
+    "gameStatus"
+  ]
+}

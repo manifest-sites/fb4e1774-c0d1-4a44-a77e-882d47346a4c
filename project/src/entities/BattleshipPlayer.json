@@ -1,0 +1,34 @@
+{
+  "name": "BattleshipPlayer",
+  "type": "object", 
+  "properties": {
+    "playerId": {
+      "type": "string",
+      "description": "Unique identifier for the player"
+    },
+    "playerName": {
+      "type": "string",
+      "description": "Display name of the player"
+    },
+    "gamesPlayed": {
+      "type": "number",
+      "description": "Total number of games played"
+    },
+    "gamesWon": {
+      "type": "number", 
+      "description": "Number of games won"
+    },
+    "currentGameId": {
+      "type": "string",
+      "description": "ID of current active game"
+    },
+    "isOnline": {
+      "type": "boolean",
+      "description": "Whether player is currently online"
+    }
+  },
+  "required": [
+    "playerId",
+    "playerName"
+  ]
+}
